@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: staging
-    database: dev_db
-    schema: dev_schema
+    database: "{{ target.database }}"
+    schema: "{{ target.schema }}"
     tables:
       - name: sale
        
