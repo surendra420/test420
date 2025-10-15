@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: staging
+    database: dev_db
+    schema: dev_schema
+    tables:
+      - name: sale
+       
