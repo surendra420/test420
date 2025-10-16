@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: fct_sales
+    description: "Fact table for all orders and payments"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: total_amount
+        tests:
+          - not_null
+      
+      

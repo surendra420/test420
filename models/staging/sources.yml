@@ -1,9 +1,10 @@
 version: 2
-
 sources:
-  - name: staging
-    database: "{{ target.database }}"
-    schema: "{{ target.schema }}"
+  - name: raw
+    database: "{{target.database}}"
+    schema: DBT_DEV_SCHEMA
     tables:
-      - name: sale
-       
+      - name: customer
+      - name: orders
+      - name: products
+      - name: transaction
